@@ -1,0 +1,16 @@
+.NavParent {
+  display: inline-flex;
+  padding: 19px 160px;
+  align-items: flex-start;
+  gap: 394px;
+  background: #181824;
+}
+
+.NavChild1 {
+  color: #7562e0;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
