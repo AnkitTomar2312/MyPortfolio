@@ -1,0 +1,63 @@
+.BannerParent {
+  background: #1a1a29;
+  padding: 136px 0 57px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.intro {
+}
+
+.profile {
+}
+.overlapper {
+  width: 100vw;
+  height: 90px;
+  background-color: #181824;
+  position: absolute;
+  bottom: 0;
+}
+.BannerAboutMe {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: inline-flex;
+  padding: 12px 25px;
+  align-items: flex-start;
+  gap: 6px;
+  border-radius: 8px;
+  background: #7562e0;
+  border: 2px solid #7562e0;
+}
+.BannerAboutMe:hover {
+  background-color: #181824;
+  border: 2px solid #fff;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+.BannnerProjects {
+  display: inline-flex;
+  padding: 12px 34px;
+  align-items: flex-start;
+  gap: 5px;
+  display: inline-flex;
+  padding: 12px 34px;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.BannnerProjects:hover {
+  background-color: #7562e0;
+  border: 2px solid #7562e0;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
