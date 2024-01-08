@@ -1,9 +1,10 @@
 .NavParent {
   display: inline-flex;
-  padding: 19px 160px;
-  align-items: flex-start;
-  gap: 394px;
+  padding: 19px;
+  justify-content: space-around;
+  align-items: center;
   background: #181824;
+  width: 100vw;
 }
 
 .NavChild1 {
@@ -13,4 +14,26 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.NavChild2 {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavChild2 p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.NavChild2 p:hover {
+  color: #7562e0;
+  transition: color 0.3s ease-in-out;
 }

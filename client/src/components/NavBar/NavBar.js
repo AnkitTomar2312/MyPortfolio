@@ -6,13 +6,11 @@ const Navbar = () => {
     <>
       <div className="NavParent">
         <div className="NavChild1">Ankit Tomar</div>
-        <div>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
+        <div className="NavChild2">
+          <p>Home</p>
+          <p>About</p>
+          <p>Projects</p>
+          <p>Contact</p>
         </div>
       </div>
     </>
