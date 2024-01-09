@@ -52,10 +52,10 @@ const Banner = () => {
             }}
           >
             <p className="BannerAboutMe">
-              About Me <img src="assets/icons/user.svg" />
+              About Me <img src="./assets/icons/user.svg" />
             </p>
             <p className="BannnerProjects">
-              Projects <img src="assets/icons/eye.svg" />
+              Projects <img src="./assets/icons/eye.svg" />
             </p>
           </div>
         </div>
