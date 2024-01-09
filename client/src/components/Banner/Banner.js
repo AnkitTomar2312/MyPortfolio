@@ -48,14 +48,19 @@ const Banner = () => {
               gap: "50px",
               justifyContent: "center",
               alignItems: "center",
+              marginTop: "48px",
             }}
           >
-            <p className="BannerAboutMe">About Me</p>
-            <p className="BannnerProjects">Projects</p>
+            <p className="BannerAboutMe">
+              About Me <img src="assets/icons/user.svg" />
+            </p>
+            <p className="BannnerProjects">
+              Projects <img src="assets/icons/eye.svg" />
+            </p>
           </div>
         </div>
         <div className="profile">
-          <img src="./assets/Ellipse.png" alt="ellipse" />
+          <img src="./assets/images/Ellipse.png" alt="ellipse" />
         </div>
       </div>
       <div className="overlapper"></div>

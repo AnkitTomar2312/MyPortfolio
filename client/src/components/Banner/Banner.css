@@ -25,9 +25,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  display: inline-flex;
+  display: flex;
   padding: 12px 25px;
-  align-items: flex-start;
+  align-items: center;
   gap: 6px;
   border-radius: 8px;
   background: #7562e0;
@@ -39,14 +39,10 @@
   transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 .BannnerProjects {
-  display: inline-flex;
+  display: flex;
   padding: 12px 34px;
-  align-items: flex-start;
   gap: 5px;
-  display: inline-flex;
-  padding: 12px 34px;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
   border-radius: 8px;
   border: 2px solid #fff;
   color: #fff;
@@ -57,7 +53,7 @@
   line-height: normal;
 }
 .BannnerProjects:hover {
-  background-color: #7562e0;
   border: 2px solid #7562e0;
-  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+
+  transition: border 0.5s ease-in-out;
 }

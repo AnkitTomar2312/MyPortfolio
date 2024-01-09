@@ -1,3 +1,4 @@
+import Aboutme from "./components/AboutMe/Aboutme";
 import Banner from "./components/Banner/Banner";
 import NavBar from "./components/NavBar/NavBar";
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
+      <Aboutme />
     </div>
   );
 }
