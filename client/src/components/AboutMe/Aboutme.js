@@ -7,6 +7,38 @@ const Aboutme = () => {
       name: "WEB DEVELOPMENT",
     },
   ];
+  const services = [
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+    {
+      icon: "./assets/icons/webdev.svg",
+      title: "UI & UX DESIGNING",
+      info: "I design beautiful web iterfaces with Figma and Adove XD",
+    },
+  ];
   return (
     <div className="About-wrapper">
       <div>
@@ -30,6 +62,38 @@ const Aboutme = () => {
               <div className="data-holder" key={index}>
                 <img className="data-icon" src={item.icon} />
                 <p className="data-text">{item.name}</p>
+              </div>
+            );
+          })}
+        </div>
+        <p
+          style={{
+            color: "var(--Primary-colour, #7562E0)",
+            fontFamily: "Poppins",
+            fontSize: "32px",
+            fontStyle: "normal",
+            fontWeight: "600",
+            lineHeight: "normal",
+            marginTop: "80px",
+          }}
+        >
+          The services i offer:
+        </p>
+        <div
+          style={{
+            display: "flex",
+            marginTop: "32px",
+            flexShrink: "0",
+            flexWrap: "wrap",
+            gap: "24px",
+          }}
+        >
+          {services.map((item, index) => {
+            return (
+              <div className="services-div" key={index}>
+                <img className="services-icon" src={item.icon} />
+                <p className="services-title">{item.title}</p>
+                <p className="services-info">{item.info}</p>
               </div>
             );
           })}
