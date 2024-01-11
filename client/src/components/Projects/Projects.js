@@ -40,7 +40,7 @@ const Projects = () => {
       <div
         style={{
           display: "flex",
-          marginTop: "32px",
+          marginTop: "36px",
           flexShrink: "0",
           flexWrap: "wrap",
           gap: "24px",
@@ -50,8 +50,18 @@ const Projects = () => {
           return (
             <div className="project-div" key={index}>
               <img src={item.image} />
-              <p>{item.title}</p>
-              <p>{item.info}</p>
+              <p className="project-title">{item.title}</p>
+              <p className="project-info">{item.info}</p>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <p className="project-viewlive">View Live</p>
+                <p className="project-gitHub">Github Repo</p>
+              </div>
             </div>
           );
         })}
