@@ -3,9 +3,11 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      image: "./assets/images/Ellipse.png",
-      title: "TWINDER",
-      info: "A live Geolocation app for finding tweets and twitter users around you.",
+      image: "./assets/images/tomify.png",
+      title: "Tomify-Music Player",
+      info: "A music player develop using only HTML, CSS, JS.",
+      github: "https://github.com/AnkitTomar2312/Tomify-Musicplayer.git",
+      live: "https://ankittomar2312.github.io/Tomify-Musicplayer/",
     },
   ];
   return (
@@ -57,10 +59,15 @@ const Projects = () => {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  marginTop: "24px",
                 }}
               >
-                <p className="project-viewlive">View Live</p>
-                <p className="project-gitHub">Github Repo</p>
+                <a href={item.live} className="project-viewlive">
+                  View Live
+                </a>
+                <a href={item.github} className="project-gitHub">
+                  Github Repo
+                </a>
               </div>
             </div>
           );
