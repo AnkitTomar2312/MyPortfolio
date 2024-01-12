@@ -60,7 +60,11 @@ const Banner = () => {
           </div>
         </div>
         <div className="profile">
-          <img src="./assets/images/Ellipse.png" alt="ellipse" />
+          <img
+            style={{ width: "80%" }}
+            src="./assets/images/Dp.png"
+            alt="ellipse"
+          />
         </div>
       </div>
       <div className="overlapper"></div>

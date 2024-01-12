@@ -40,9 +40,10 @@ const Connect = () => {
           <div
             style={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "flex-start",
               alignItems: "center",
               gap: "10px",
+              marginTop: "24px",
             }}
           >
             <a href="">
@@ -72,6 +73,20 @@ const Connect = () => {
           >
             Contact me, let’s make magic together
           </p>
+          <form
+            action="mailto: ankitjdec@gmail.com"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "16px",
+              marginTop: "36px",
+            }}
+          >
+            <input className="form-input" type="text" placeholder="Name:" />
+            <input className="form-input" type="email" placeholder="Email:" />
+            <textarea className="form-input" placeholder="Message:" />
+            <input className="submit-btn" type="submit" value="Send" />
+          </form>
         </div>
       </div>
     </div>
