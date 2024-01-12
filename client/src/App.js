@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
 function App() {
   return (
-    <div style={{ width: "100vw", height: "auto" }}>
+    <div style={{ width: "100vw", height: "auto", backgroundColor: "#1a1a29" }}>
       <NavBar />
       <Banner />
       <Aboutme />

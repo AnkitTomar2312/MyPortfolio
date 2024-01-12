@@ -9,6 +9,13 @@ const Projects = () => {
       github: "https://github.com/AnkitTomar2312/Tomify-Musicplayer.git",
       live: "https://ankittomar2312.github.io/Tomify-Musicplayer/",
     },
+    {
+      image: "./assets/images/tomify.png",
+      title: "Tomify-Music Player",
+      info: "A music player develop using only HTML, CSS, JS.",
+      github: "https://github.com/AnkitTomar2312/Tomify-Musicplayer.git",
+      live: "https://ankittomar2312.github.io/Tomify-Musicplayer/",
+    },
   ];
   return (
     <div className="Project-wrapper">
@@ -40,12 +47,14 @@ const Projects = () => {
         here are a few of my live, real-world projects
       </p>
       <div
+        className="project-wrapper"
         style={{
           display: "flex",
           marginTop: "36px",
           flexShrink: "0",
           flexWrap: "wrap",
           gap: "24px",
+          width: "100%",
         }}
       >
         {projects.map((item, index) => {
@@ -54,14 +63,7 @@ const Projects = () => {
               <img src={item.image} />
               <p className="project-title">{item.title}</p>
               <p className="project-info">{item.info}</p>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  marginTop: "24px",
-                }}
-              >
+              <div className="project-link-wrapper">
                 <a href={item.live} className="project-viewlive">
                   View Live
                 </a>

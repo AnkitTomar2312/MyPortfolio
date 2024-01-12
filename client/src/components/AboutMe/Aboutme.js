@@ -6,6 +6,10 @@ const Aboutme = () => {
       icon: "./assets/icons/webdev.svg",
       name: "WEB DEVELOPMENT",
     },
+    {
+      icon: "./assets/icons/webdev.svg",
+      name: "WEB DEVELOPMENT",
+    },
   ];
   const services = [
     {
@@ -44,8 +48,8 @@ const Aboutme = () => {
       <div>
         <p className="Aboutme-text">About me:</p>
         <p className="Aboutme-desc">
-          Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer,
-          UI designer, and Mobile developer. I jhave honed my skills in Web
+          Hi, my name is Ankit Tomar, i am a Fullstack web developer, UI
+          designer, and Mobile developer. I jhave honed my skills in Web
           Development and advance i have core understanding of advance UI design
           principles. Here are the major skiills i have.
         </p>
@@ -67,8 +71,9 @@ const Aboutme = () => {
           })}
         </div>
         <p
+          className="services-i-offer"
           style={{
-            color: "var(--Primary-colour, #7562E0)",
+            color: " #7562E0",
             fontFamily: "Poppins",
             fontSize: "32px",
             fontStyle: "normal",
@@ -79,15 +84,7 @@ const Aboutme = () => {
         >
           The services i offer:
         </p>
-        <div
-          style={{
-            display: "flex",
-            marginTop: "32px",
-            flexShrink: "0",
-            flexWrap: "wrap",
-            gap: "24px",
-          }}
-        >
+        <div className="services-wrapper">
           {services.map((item, index) => {
             return (
               <div className="services-div" key={index}>

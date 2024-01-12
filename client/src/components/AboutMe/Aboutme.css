@@ -45,8 +45,7 @@
 }
 .data-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: "15px";
+  gap: 15px;
   margin-top: 58px;
 }
 
@@ -112,4 +111,38 @@
   font-weight: 500;
   line-height: 32px;
   margin-top: 16px;
+}
+.services-wrapper {
+  display: flex;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .About-wrapper {
+    padding: 55px 18px;
+  }
+  .exp-text {
+    font-size: 16px;
+  }
+  .data-wrapper {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .services-div {
+    width: 256px;
+    height: 254px;
+  }
+  .services-wrapper {
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .services-i-offer {
+    text-align: center;
+  }
 }

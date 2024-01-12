@@ -37,3 +37,12 @@
   color: #7562e0;
   transition: color 0.3s ease-in-out;
 }
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .NavParent {
+    flex-direction: column;
+  }
+  .NavChild2 {
+    margin-top: 18px;
+    gap: 18px;
+  }
+}

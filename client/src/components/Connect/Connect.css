@@ -22,3 +22,34 @@
   text-align: center;
   border: 0;
 }
+.connect-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 36px;
+}
+.Connect-wrapper-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .Connect-wrapper {
+    padding: 55px 18px;
+  }
+  .Connect-wrapper-div {
+    flex-direction: column;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .submit-btn {
+    width: 90%;
+  }
+  .connect-form {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+  }
+}

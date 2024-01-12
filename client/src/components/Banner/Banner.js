@@ -42,15 +42,7 @@ const Banner = () => {
             Freelance Fullstack developer.
             <br /> I create seamless web experiences <br /> for end-users.
           </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "50px",
-              justifyContent: "center",
-              alignItems: "center",
-              marginTop: "48px",
-            }}
-          >
+          <div className="banner-btns">
             <p className="BannerAboutMe">
               About Me <img src="./assets/icons/user.svg" />
             </p>

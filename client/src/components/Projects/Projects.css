@@ -59,4 +59,31 @@
   box-shadow: 0px 18px 18px 0px rgba(0, 0, 0, 0.75);
   transition: box-shadow 0.2s ease-in-out;
 }
+.project-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  align-items: center;
+  gap: 46px;
+}
 /* flip card logic */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  .Project-wrapper {
+    padding: 55px 18px;
+  }
+  .project-div {
+    width: 264px;
+    height: auto;
+  }
+  .project-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-viewlive,
+  .project-gitHub {
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}

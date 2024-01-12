@@ -4,13 +4,7 @@ import "./Connect.css";
 const Connect = () => {
   return (
     <div className="Connect-wrapper">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-        }}
-      >
+      <div className="Connect-wrapper-div">
         <div>
           <p
             style={{
@@ -43,7 +37,7 @@ const Connect = () => {
               justifyContent: "flex-start",
               alignItems: "center",
               gap: "10px",
-              marginTop: "24px",
+              margin: "24px 0",
             }}
           >
             <a href="">
@@ -73,19 +67,17 @@ const Connect = () => {
           >
             Contact me, let’s make magic together
           </p>
-          <form
-            action="mailto: ankitjdec@gmail.com"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "16px",
-              marginTop: "36px",
-            }}
-          >
+          <form className="connect-form" action="mailto: ankitjdec@gmail.com">
             <input className="form-input" type="text" placeholder="Name:" />
             <input className="form-input" type="email" placeholder="Email:" />
             <textarea className="form-input" placeholder="Message:" />
-            <input className="submit-btn" type="submit" value="Send" />
+
+            <input
+              style={{ marginTop: "36px", textAlign: "center" }}
+              className="submit-btn"
+              type="submit"
+              value="Send"
+            />
           </form>
         </div>
       </div>
