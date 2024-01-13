@@ -1,11 +1,7 @@
 import React from "react";
 import "./Aboutme.css";
-const Aboutme = () => {
+const Aboutme = ({ innerRef }) => {
   const data = [
-    {
-      icon: "./assets/icons/webdev.svg",
-      name: "WEB DEVELOPMENT",
-    },
     {
       icon: "./assets/icons/webdev.svg",
       name: "WEB DEVELOPMENT",
@@ -14,37 +10,17 @@ const Aboutme = () => {
   const services = [
     {
       icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
+      title: "UI & UX DEVELOPER",
+      info: "I develop beautiful web iterfaces.",
     },
     {
       icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
-    },
-    {
-      icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
-    },
-    {
-      icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
-    },
-    {
-      icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
-    },
-    {
-      icon: "./assets/icons/webdev.svg",
-      title: "UI & UX DESIGNING",
-      info: "I design beautiful web iterfaces with Figma and Adove XD",
+      title: "MERN STACK",
+      info: "I develop single page web interfaces with React js and MongoDB database ",
     },
   ];
   return (
-    <div className="About-wrapper">
+    <div ref={innerRef} className="About-wrapper">
       <div>
         <p className="Aboutme-text">About me:</p>
         <p className="Aboutme-desc">

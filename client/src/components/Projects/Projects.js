@@ -1,14 +1,7 @@
 import React from "react";
 import "./Projects.css";
-const Projects = () => {
+const Projects = ({ innerRef }) => {
   const projects = [
-    {
-      image: "./assets/images/tomify.png",
-      title: "Tomify-Music Player",
-      info: "A music player develop using only HTML, CSS, JS.",
-      github: "https://github.com/AnkitTomar2312/Tomify-Musicplayer.git",
-      live: "https://ankittomar2312.github.io/Tomify-Musicplayer/",
-    },
     {
       image: "./assets/images/tomify.png",
       title: "Tomify-Music Player",
@@ -18,7 +11,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="Project-wrapper">
+    <div ref={innerRef} className="Project-wrapper">
       <p
         style={{
           color: "#7562E0",

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Connect.css";
 
-const Connect = () => {
+const Connect = ({ innerRef }) => {
   return (
-    <div className="Connect-wrapper">
+    <div ref={innerRef} className="Connect-wrapper">
       <div className="Connect-wrapper-div">
         <div>
           <p

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Banner.css";
 import Typewriter from "../typewritter";
-const Banner = () => {
+const Banner = ({ innerRef }) => {
   return (
-    <div style={{ position: "relative" }}>
+    <div ref={innerRef} style={{ position: "relative" }}>
       <div className="BannerParent">
         <div className="intro">
           <p
