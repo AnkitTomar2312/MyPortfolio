@@ -1,6 +1,6 @@
 .BannerParent {
   background: #1a1a29;
-  padding: 136px 0 57px 0;
+  padding: 136px 24px 57px 24px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,6 +10,7 @@
 }
 
 .profile {
+  text-align: center;
 }
 .overlapper {
   width: 100vw;

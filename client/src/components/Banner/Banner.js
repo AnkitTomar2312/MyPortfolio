@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import Typewriter from "../typewritter";
 const Banner = () => {
   return (
     <div style={{ position: "relative" }}>
@@ -27,7 +28,7 @@ const Banner = () => {
               lineHeight: "normal",
             }}
           >
-            Ankit Tomar
+            <Typewriter />
           </p>
           <p
             style={{
