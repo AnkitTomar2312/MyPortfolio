@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Projects = ({ innerRef }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, easing: "ease-in-out" });
+  }, []);
   const projects = [
     {
       image: "./assets/images/tomify.png",
@@ -22,6 +27,7 @@ const Projects = ({ innerRef }) => {
           lineHeight: "normal",
           marginBottom: "0",
         }}
+        data-aos="slide-right"
       >
         Featured projects:
       </p>
@@ -35,6 +41,7 @@ const Projects = ({ innerRef }) => {
           lineHeight: "32px",
           marginTop: "16px",
         }}
+        data-aos="slide-right"
       >
         I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects
@@ -52,7 +59,7 @@ const Projects = ({ innerRef }) => {
       >
         {projects.map((item, index) => {
           return (
-            <div className="project-div" key={index}>
+            <div className="project-div" key={index} data-aos="slide-up">
               <img src={item.image} />
               <p className="project-title">{item.title}</p>
               <p className="project-info">{item.info}</p>

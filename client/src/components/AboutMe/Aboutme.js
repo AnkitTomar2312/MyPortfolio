@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Aboutme.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Aboutme = ({ innerRef }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, easing: "ease-in-out" });
+  }, []);
+
   const data = [
     {
       icon: "./assets/icons/webdev.svg",
@@ -20,16 +26,18 @@ const Aboutme = ({ innerRef }) => {
     },
   ];
   return (
-    <div ref={innerRef} className="About-wrapper">
+    <div ref={innerRef} className="About-wrapper" data-aos="fade-up">
       <div>
-        <p className="Aboutme-text">About me:</p>
-        <p className="Aboutme-desc">
+        <p data-aos="slide-right" className="Aboutme-text">
+          About me:
+        </p>
+        <p className="Aboutme-desc" data-aos="slide-left">
           Hi, my name is Ankit Tomar, i am a Fullstack web developer, UI
           designer, and Mobile developer. I jhave honed my skills in Web
           Development and advance i have core understanding of advance UI design
           principles. Here are the major skiills i have.
         </p>
-        <div className="exp-wrpper">
+        <div className="exp-wrpper" data-aos="slide-right">
           <p className="exp">1+</p>
           <p className="exp-text">
             Years of experience. Specialised in building apps, while ensuring a
@@ -39,7 +47,7 @@ const Aboutme = ({ innerRef }) => {
         <div className="data-wrapper">
           {data.map((item, index) => {
             return (
-              <div className="data-holder" key={index}>
+              <div className="data-holder" data-aos="slide-up" key={index}>
                 <img className="data-icon" src={item.icon} />
                 <p className="data-text">{item.name}</p>
               </div>
@@ -57,13 +65,14 @@ const Aboutme = ({ innerRef }) => {
             lineHeight: "normal",
             marginTop: "80px",
           }}
+          data-aos="slide-right"
         >
           The services i offer:
         </p>
         <div className="services-wrapper">
           {services.map((item, index) => {
             return (
-              <div className="services-div" key={index}>
+              <div className="services-div" key={index} data-aos="slide-up">
                 <img className="services-icon" src={item.icon} />
                 <p className="services-title">{item.title}</p>
                 <p className="services-info">{item.info}</p>

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Connect.css";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Connect = ({ innerRef }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, easing: "ease-in-out" });
+  }, []);
   return (
     <div ref={innerRef} className="Connect-wrapper">
       <div className="Connect-wrapper-div">
-        <div>
+        <div data-aos="slide-right">
           <p
             style={{
               color: "#7562E0",
@@ -40,21 +44,21 @@ const Connect = ({ innerRef }) => {
               margin: "24px 0",
             }}
           >
-            <a href="">
+            <a href="" data-aos="fade-up">
               <img src="./assets/icons/sms.svg" />
             </a>
-            <a href="">
+            <a href="" data-aos="fade-up">
               <img src="./assets/icons/dribbble.svg" />
             </a>
-            <a href="">
+            <a href="" data-aos="fade-up">
               <img src="./assets/icons/instagram.svg" />
             </a>
-            <a href="">
+            <a href="" data-aos="fade-up">
               <img src="./assets/icons/facebook.svg" />
             </a>
           </div>
         </div>
-        <div>
+        <div data-aos="flip-right">
           <p
             style={{
               color: "#FFF",

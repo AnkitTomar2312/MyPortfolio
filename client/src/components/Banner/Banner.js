@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Banner.css";
 import Typewriter from "../typewritter";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Banner = ({ innerRef }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div ref={innerRef} style={{ position: "relative" }}>
       <div className="BannerParent">
@@ -15,6 +20,7 @@ const Banner = ({ innerRef }) => {
               fontWeight: "600",
               lineHeight: "normal",
             }}
+            data-aos="slide-right"
           >
             Hello, i'am
           </p>
@@ -27,6 +33,7 @@ const Banner = ({ innerRef }) => {
               fontWeight: "600",
               lineHeight: "normal",
             }}
+            data-aos="zoom-in"
           >
             <Typewriter />
           </p>
@@ -38,12 +45,14 @@ const Banner = ({ innerRef }) => {
               fontStyle: "normal",
               fontWeight: "500",
               lineHeight: "normal",
+              marginTop: "24px",
             }}
+            data-aos="flip-left"
           >
             Freelance Fullstack developer.
             <br /> I create seamless web experiences <br /> for end-users.
           </p>
-          <div className="banner-btns">
+          <div className="banner-btns" data-aos="slide-up">
             <p className="BannerAboutMe">
               About Me <img src="./assets/icons/user.svg" />
             </p>
@@ -52,7 +61,7 @@ const Banner = ({ innerRef }) => {
             </p>
           </div>
         </div>
-        <div className="profile">
+        <div className="profile" data-aos="zoom-in">
           <img
             style={{ width: "80%" }}
             src="./assets/images/Dp.png"
