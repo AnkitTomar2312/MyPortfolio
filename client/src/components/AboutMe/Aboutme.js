@@ -31,7 +31,7 @@ const Aboutme = ({ innerRef }) => {
         <p data-aos="slide-right" className="Aboutme-text">
           About me:
         </p>
-        <p className="Aboutme-desc" data-aos="slide-left">
+        <p className="Aboutme-desc" data-aos="fade-up-right">
           Hi, my name is Ankit Tomar, i am a Fullstack web developer, UI
           designer, and Mobile developer. I jhave honed my skills in Web
           Development and advance i have core understanding of advance UI design
