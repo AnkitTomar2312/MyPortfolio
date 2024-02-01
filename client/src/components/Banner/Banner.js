@@ -56,9 +56,13 @@ const Banner = ({ innerRef }) => {
             <p className="BannerAboutMe">
               About Me <img src="./assets/icons/user.svg" />
             </p>
-            <p className="BannnerProjects">
-              Projects <img src="./assets/icons/eye.svg" />
-            </p>
+            <a
+              className="BannnerProjects"
+              href="./assets/icons/Ankit.pdf"
+              download
+            >
+              Resume <img src="./assets/icons/eye.svg" />
+            </a>
           </div>
         </div>
         <div className="profile" data-aos="zoom-in">
